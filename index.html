@@ -4,11 +4,114 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/styles.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/styles.css">
   <title>Document</title>
 </head>
 <body>
+  <header>
+    <h1 class="text-center">Freelance Money Calculator</h1>
+  </header>
   
+  <main class="container">
+
+    <form class="formCalcul shadow" id="formCalculGain">
+      <div class="sectionCalcul pricing">
+          <h4>Vos tarifs</h4>
+          <div class="form-container">
+            <div
+            class="row justify-content-center justify-content-xl-between mx-auto"
+          >
+              <div class="form-field col-12 col-md-4 col-lg-3">
+                  <label class="form-text">TH</label>
+                  <input class="form-control" name="TH" type="text" min="0" placeholder="Ex : 70"/>
+              </div>
+              <div class="form-field col-12 col-md-4 col-lg-3">
+                  <label class="form-text">TJM</label>
+                  <input class="form-control" name="TJM" type="text" min="0" placeholder="Ex : 740"/>
+              </div>
+              <div class="form-field col-12 col-md-4 col-lg-3">
+                  <label class="form-text">Extras</label>
+                  <input class="form-control" name="Extras" type="text" min="0" placeholder="Ex : 47"/>
+              </div>
+              </div>
+          </div>
+      </div>
+      <div class="sectionCalcul qte">
+          <h4>Quantités</h4>
+          <div class="form-container">
+            <div
+            class="row justify-content-center justify-content-xl-between mx-auto"
+          >
+              <div class="form-field col-12 col-md-4 col-lg-3">
+                  <label class="form-text">TH</label>
+                  <input class="form-control" class="form-control" name="QteTH" type="text" min="0" placeholder="Ex : 140"/>
+              </div>
+              <div class="form-field col-12 col-md-4 col-lg-3">
+                  <label class="form-text">TJM</label>
+                  <input class="form-control" name="QteTJM" type="text" min="0" placeholder="Ex : 30"/>
+              </div>
+              <div class="form-field col-12 col-md-4 col-lg-3">
+                  <label class="form-text">Extras</label>
+                  <input class="form-control" name="QteExtras" type="text" min="0" placeholder="Ex : 7"/>
+              </div>
+              </div>
+          </div>
+      </div>
+      <div class="sectionCalcul fees"><!-- fees veut dire charges -->
+          <h4>Charges</h4>
+          <div class="form-container">
+              <div class="form-field">
+                  <label for="charge" class="form-text">Charge</label>
+
+                 <!--<input id="charge" class="form-control" name="Charges" type="text" placeholder="Ex : 140"/>-->
+                  <select
+                            class="form-select form-select text-center"
+                            id="charges"
+                            aria-label=".form-select-lg example"
+                          >
+                            <option selected value="0">-- Taux --</option>
+                            <option value="1">5.5%</option>
+                            <option value="2">11%</option>
+                            <option value="3">16.5%</option>
+                            <option value="4">22%</option>
+                          </select>
+              </div>
+          </div>
+          <button onclick="CalculGain()" id="buttonValidation" type="button" class="btn calcul">Calculer</button>
+      </div>
+     
+      
+      <div class="sectionCalcul result">
+        <h4>Montant</h4>
+      
+            <div class="form-container">
+              <div
+              class="row justify-content-center justify-content-xl-between mx-auto"
+            >
+              <div class="form-field col-12 col-md-4 col-lg-3">
+                  <label for="resultBrut" class="form-text">Brut</label>
+                  <input id="resultBrut" class="form-control" name="Charges" type="text" />
+              </div>
+
+              <div class="form-field col-12 col-md-4 col-lg-3">
+                  <label for="resultTaxe" class="form-text">Taxes</label>
+                  <input id="resultTaxe" class="form-control" name="Charges" type="text"/>
+              </div>
+
+              <div class="form-field col-12 col-md-4 col-lg-3">
+                  <label for="resultNet" class="form-text">Net</label>
+                  <input id="resultNet" class="form-control" name="Charges" type="text"/>
+              </div>
+          </div>
+          </div>
+      </div>
+  </form>
+  
+  </main>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
   <script src="assets/js/app.js"></script>
 </body>

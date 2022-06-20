@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+h1 {
+  margin-top: 2%;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h4{
+  color: #154440;
+}
+
+.formCalcul{
+  padding:15px;
+  border: solid 1px #154440;
+  border-radius: 2%;
+  margin: 10% auto;
+  background-color: rgb(255,255,255,0.3);
+  width: 60%;
+}
+
+.formCalcul .sectionCalcul{
+  margin:15px;
+}
+.formCalcul .sectionCalcul {
+  margin: 15px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* body{
+  background-color: #FFC44E;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ff849c'/%3E%3Cstop offset='1' stop-color='%23ff849c' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2335ff27'/%3E%3Cstop offset='1' stop-color='%2335ff27' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%236a5eff'/%3E%3Cstop offset='1' stop-color='%236a5eff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFC44E'/%3E%3Cstop offset='1' stop-color='%23FFC44E' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FCBBFF'/%3E%3Cstop offset='1' stop-color='%23FCBBFF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230CF'/%3E%3Cstop offset='1' stop-color='%230CF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+ */
+
+ body {
+  background-color: #0F72FF;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Cellipse fill='none' stroke-width='114.2' stroke-opacity='0.34' id='a' rx='600' ry='450'/%3E%3C/defs%3E%3Cg style='transform-origin:center'%3E%3Cg transform='rotate(70.2 0 0)' style='transform-origin:center'%3E%3Cg transform='rotate(-142.4 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%2327002B' href='%23a' transform='rotate(-53.4 0 0) scale(0.466)'/%3E%3Cuse stroke='%23290c39' href='%23a' transform='rotate(-44.5 0 0) scale(0.555)'/%3E%3Cuse stroke='%232a1848' href='%23a' transform='rotate(-35.6 0 0) scale(0.644)'/%3E%3Cuse stroke='%23282357' href='%23a' transform='rotate(-26.7 0 0) scale(0.733)'/%3E%3Cuse stroke='%23222f65' href='%23a' transform='rotate(-17.8 0 0) scale(0.822)'/%3E%3Cuse stroke='%23163a73' href='%23a' transform='rotate(-8.9 0 0) scale(0.911)'/%3E%3Cuse stroke='%23004680' href='%23a' transform=''/%3E%3Cuse stroke='%2300528c' href='%23a' transform='rotate(8.9 0 0) scale(1.089)'/%3E%3Cuse stroke='%23005e98' href='%23a' transform='rotate(17.8 0 0) scale(1.178)'/%3E%3Cuse stroke='%23006aa2' href='%23a' transform='rotate(26.7 0 0) scale(1.267)'/%3E%3Cuse stroke='%230076aa' href='%23a' transform='rotate(35.6 0 0) scale(1.356)'/%3E%3Cuse stroke='%230082b1' href='%23a' transform='rotate(44.5 0 0) scale(1.445)'/%3E%3Cuse stroke='%23008eb7' href='%23a' transform='rotate(53.4 0 0) scale(1.534)'/%3E%3Cuse stroke='%23009abb' href='%23a' transform='rotate(62.3 0 0) scale(1.623)'/%3E%3Cuse stroke='%2300a6bd' href='%23a' transform='rotate(71.2 0 0) scale(1.712)'/%3E%3Cuse stroke='%2300b2be' href='%23a' transform='rotate(80.1 0 0) scale(1.801)'/%3E%3Cuse stroke='%2300bebe' href='%23a' transform='rotate(89 0 0) scale(1.89)'/%3E%3Cuse stroke='%2300c9bd' href='%23a' transform='rotate(97.9 0 0) scale(1.979)'/%3E%3Cuse stroke='%2300d5bb' href='%23a' transform='rotate(106.8 0 0) scale(2.068)'/%3E%3Cuse stroke='%232fe0b8' href='%23a' transform='rotate(115.7 0 0) scale(2.157)'/%3E%3Cuse stroke='%2358ebb4' href='%23a' transform='rotate(124.6 0 0) scale(2.246)'/%3E%3Cuse stroke='%2379f5b1' href='%23a' transform='rotate(133.5 0 0) scale(2.335)'/%3E%3Cuse stroke='%2396FFAD' href='%23a' transform='rotate(142.4 0 0) scale(2.424)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+ }
+.resultDiv {
+  text-align: center;
+  font-weight: 500; 
+ 
+  border-radius: 5%;
+  min-width: 140px;
+}
+
+#resultBrut{
+  background-color: #066AC8;
+  color:white;
+}
+
+#resultTaxe{
+  background-color: #04A2D1;
+  color:white;
+  
+}
+
+#resultNet{
+  background-color: #61E7B7;
+  color:white;
+}
+
+.calcul {
+  background-color: rgb(75, 26, 253);
+  color: white;
+}
