@@ -32,11 +32,13 @@ function CalculGain() {
   let chargeADeduire = (totalBrut * taxesValues[charges.value])/100;
   let totalNet = totalBrut - chargeADeduire;
 
+
   document.getElementById("resultBrut").value = totalBrut.toFixed(2) + " €";
   document.getElementById("resultTaxe").value = chargeADeduire.toFixed(2) + " €";
   document.getElementById("resultNet").value = totalNet.toFixed(2) + " €";
   
 }
+ 
 
 function CheckInputs() {
   let mesInputs = document.querySelectorAll('#formCalculGain input.form-control');
