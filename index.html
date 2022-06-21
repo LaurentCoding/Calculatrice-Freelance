@@ -18,49 +18,49 @@
 
     <form class="formCalcul shadow" id="formCalculGain">
       <div class="sectionCalcul pricing">
-          <h4>Vos tarifs</h4>
+          <h4 class="mb-3">Vos tarifs</h4>
           <div class="form-container">
             <div
             class="row justify-content-center justify-content-xl-between mx-auto"
           >
               <div class="form-field col-12 col-md-4 col-lg-3">
                   <label class="form-text">TH</label>
-                  <input class="form-control" name="TH" type="text" min="0" placeholder="Ex : 70"/>
+                  <input class="form-control" name="TH" type="text" placeholder="Ex : 70"/>
               </div>
               <div class="form-field col-12 col-md-4 col-lg-3">
                   <label class="form-text">TJM</label>
-                  <input class="form-control" name="TJM" type="text" min="0" placeholder="Ex : 740"/>
+                  <input class="form-control" name="TJM" type="text" placeholder="Ex : 740"/>
               </div>
               <div class="form-field col-12 col-md-4 col-lg-3">
                   <label class="form-text">Extras</label>
-                  <input class="form-control" name="Extras" type="text" min="0" placeholder="Ex : 47"/>
+                  <input class="form-control" name="Extras" type="text" placeholder="Ex : 47"/>
               </div>
               </div>
           </div>
       </div>
       <div class="sectionCalcul qte">
-          <h4>Quantités</h4>
+          <h4 class="mb-3">Quantités</h4>
           <div class="form-container">
             <div
             class="row justify-content-center justify-content-xl-between mx-auto"
           >
               <div class="form-field col-12 col-md-4 col-lg-3">
                   <label class="form-text">TH</label>
-                  <input class="form-control" class="form-control" name="QteTH" type="text" min="0" placeholder="Ex : 140"/>
+                  <input class="form-control" class="form-control" name="QteTH" type="text" placeholder="Ex : 140"/>
               </div>
               <div class="form-field col-12 col-md-4 col-lg-3">
                   <label class="form-text">TJM</label>
-                  <input class="form-control" name="QteTJM" type="text" min="0" placeholder="Ex : 30"/>
+                  <input class="form-control" name="QteTJM" type="text" placeholder="Ex : 30"/>
               </div>
               <div class="form-field col-12 col-md-4 col-lg-3">
                   <label class="form-text">Extras</label>
-                  <input class="form-control" name="QteExtras" type="text" min="0" placeholder="Ex : 7"/>
+                  <input class="form-control" name="QteExtras" type="text" placeholder="Ex : 7"/>
               </div>
               </div>
           </div>
       </div>
       <div class="sectionCalcul fees"><!-- fees veut dire charges -->
-          <h4>Charges</h4>
+          <h4 class="mb-3">Charges</h4>
           <div class="form-container">
               <div class="form-field">
                   <label for="charge" class="form-text">Charge</label>
@@ -73,18 +73,17 @@
                           >
                             <option selected value="0">-- Taux --</option>
                             <option value="1">5.5%</option>
-                            <option value="2">11%</option>
-                            <option value="3">16.5%</option>
-                            <option value="4">22%</option>
+                            <option value="2">10%</option>
+                            <option value="4">20%</option>
                           </select>
               </div>
           </div>
-          <button onclick="CalculGain()" id="buttonValidation" type="button" class="btn calcul">Calculer</button>
+          <button id="buttonValidation" type="button" class="btn calcul">Calculer</button>
       </div>
      
       
       <div class="sectionCalcul result">
-        <h4>Montant</h4>
+        <h4 class="mb-3">Montant</h4>
       
             <div class="form-container">
               <div
